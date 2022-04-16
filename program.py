@@ -2,7 +2,7 @@ import math
 import numpy as np
 
 def uniformGenerator(m:int, a:int, c:int, numbers:int):
-  xStart = 5
+  xStart = 5 # seed, u can change this value
   nums = []
   nums.append(xStart)
   for i in range(0, numbers):
@@ -70,7 +70,7 @@ def odehEvansAlgorithm(numbers: int):
 mean = 0 # change this value for non standar normal dist
 desvStd = 1 # change this value for non standar normal dist
 
-n = odehEvansAlgorithm(20)
+n = odehEvansAlgorithm(20) # change the parameters to set the amount of values that you want
 nNew = desStandarizeValues(n, mean, desvStd)
 
 print(f'normal values \n: {n}')
