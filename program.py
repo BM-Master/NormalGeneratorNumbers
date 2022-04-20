@@ -13,9 +13,6 @@ def uniformGenerator(m:int, a:int, c:int, numbers:int):
   ret = [x/m for x in nums]
   return ret
 
-def standarizeValues(data, mean:int, desvStd:int):
-  return [(x-mean)/desvStd for x in data]
-
 def desStandarizeValues(data, mean:int, desvStd:int):
   return [ (x*desvStd + mean) for x in data]
 
